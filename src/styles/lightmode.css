@@ -1,0 +1,28 @@
+.lightmode__container {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    width: auto;
+    display: flex;
+}
+
+.lightmode {
+    width: 70px;
+    padding: .4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 1rem;
+    border: 1px;
+    border-color: #84b4ac;
+    outline: 2px solid;
+    outline: double;
+    /* outline-offset: 1px; */
+    color: #84b4ac;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+    z-index: 999999;
+}

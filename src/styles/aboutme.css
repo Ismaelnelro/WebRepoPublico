@@ -1,0 +1,103 @@
+.aboutme__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+.aboutme__layout {
+    position: relative;
+    top: -100%;
+    left: 0%;
+    width: 60%;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+    transition: all ease-in-out 1s;
+}
+
+.aboutme__layout-active {
+    top: 0;
+}
+
+.aboutme__description {
+    user-select: none;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: justify;
+}
+
+.about__description-name {
+    font-size: 1.5rem;
+}
+
+
+
+.about__description-sign {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration-line: underline;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 807px) and (orientation: landscape) {
+
+
+    .aboutme__layout {
+        width: 50%;
+        padding: 0 2rem;
+    }
+
+
+    .aboutme__description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        gap: 1rem;
+    }
+
+    .about__description-name {
+        font-size: 1.2rem;
+    }
+
+    .about__description-sign {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration-line: underline;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+
+    .aboutme__description {
+        font-size: 1rem;
+    }
+
+    .about__description-name {
+        font-size: 1.2rem;
+    }
+
+    .aboutme__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .aboutme__layout {
+        width: 100%;
+        height: auto;
+    }
+}

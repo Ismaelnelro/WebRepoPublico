@@ -1,0 +1,40 @@
+.name__container {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: all ease 1.4s;
+    user-select: none;
+}
+
+.name__primario,
+.name__secundario,
+.name__tercero {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 20rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 807px) and (orientation: landscape) {
+
+    .name__primario,
+    .name__secundario,
+    .name__tercero {
+        font-size: 2.7rem;
+        width: 15rem;
+    }
+}
+
+.name__secundario {
+    border: none;
+    border-top: .3rem solid;
+    border-bottom: .3rem solid;
+    text-align: center;
+}
+
+.name__tercero {
+    text-align: end;
+}

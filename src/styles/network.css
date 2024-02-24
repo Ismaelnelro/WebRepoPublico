@@ -1,0 +1,38 @@
+.network__container {
+    position: absolute;
+    left: 0;
+    bottom: .3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem 2rem;
+    gap: 1rem;
+    height: 2rem;
+    overflow: hidden;
+    z-index: 9999;
+    color: #151E21;
+    border-radius: .72rem;
+    /* background-color: #151E21; */
+}
+
+.network {
+    display: flex;
+    justify-items: center;
+    gap: 4px;
+    font-size: 1rem;
+}
+
+.network:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 769px) {
+
+    .network__container {
+        width: 100%;
+        justify-content: flex-end;
+        padding-right: 1rem;
+        padding-left: 0;
+        /* display: none; */
+    }
+}

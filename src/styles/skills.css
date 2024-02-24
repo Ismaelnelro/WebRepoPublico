@@ -1,0 +1,74 @@
+.skills__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.skills__layout {
+    position: relative;
+    top: -100%;
+    left: 0%;
+    width: 80%;
+    height: 44.33%;
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    user-select: none;
+    transition: all ease-in-out 1s;
+}
+
+
+.skills__layout-active {
+    top: 30%;
+}
+
+
+.card {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    text-transform: lowercase;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 807px) and (orientation: landscape) {
+    
+    .skills__layout {
+        width: 80%;
+        height: 100%;
+        padding: 2.5rem 0rem;
+        gap: .5rem;
+    }
+
+    .skills__layout-active {
+        top: 0%;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 769px) {
+
+    .skills__layout {
+        width: 100%;
+        height: 100%;
+        padding: 2.5rem 0rem;
+        gap: 1rem;
+    }
+
+    .skills__layout-active {
+        top: 0%;
+    }
+}
